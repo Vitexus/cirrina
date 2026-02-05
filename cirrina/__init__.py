@@ -12,4 +12,4 @@ from .server import Server
 __all__ = ['Server']
 
 # define package metadata
-__VERSION__ = '0.1.0'
+__VERSION__ = '0.5.3'

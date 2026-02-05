@@ -32,6 +32,8 @@ setup(
     install_requires=[
         'aiohttp',
         'aiohttp_session',
+        'aiohttp_session[file]',
+        'aiohttp_swagger',
         'cryptography'
     ],
 
@@ -48,7 +50,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Operating System :: OS Independent',
-        'License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)',
+        'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
         'Topic :: Utilities'
     ],
 )

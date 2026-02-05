@@ -2,10 +2,36 @@ Source: cirrina
 Maintainer: André Roth <neolynx@gmail.com>
 Section: python
 Priority: optional
-Build-Depends: debhelper (>= 7), dh-python, python3-setuptools, python3-all, python3-cryptography, python3-aiohttp, python3-aiohttp-session, python3-aiohttp-swagger, python3-aiohttp-session-file
-Standards-Version: 3.9.7
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-aiohttp,
+ python3-aiohttp-session,
+ python3-aiohttp-session-file,
+ python3-aiohttp-swagger,
+ python3-all,
+ python3-cryptography,
+ python3-setuptools,
+Standards-Version: 4.6.2
+Homepage: https://github.com/neolynx/cirrina
+Vcs-Git: https://github.com/neolynx/cirrina.git
+Vcs-Browser: https://github.com/neolynx/cirrina
+Rules-Requires-Root: no
 
 Package: python3-cirrina
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python3-cryptography, python3-aiohttp, python3-aiohttp-session, python3-aiohttp-swagger, python3-aiohttp-session-file, python3-aiohttp-session-file
+Depends:
+ python3-aiohttp,
+ python3-aiohttp-session,
+ python3-aiohttp-session-file,
+ python3-aiohttp-swagger,
+ python3-cryptography,
+ ${misc:Depends},
+ ${python3:Depends},
 Description: Opinionated asynchronous web framework based on aiohttp
+ Cirrina is an opinionated asynchronous web framework built on top of aiohttp.
+ It provides a structured approach to building web applications with asyncio,
+ including built-in support for sessions, swagger documentation, and WebSocket
+ connections.
+ .
+ This package provides the Python 3 module for cirrina.
